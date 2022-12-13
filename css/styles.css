@@ -2,20 +2,35 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff
+}
+
+.white-section {
+    background-color: #fff;
+    color: black;
 }
 
 /*****  Title Section   *****/
 
-.container-fluid {
-    padding: 3% 15%
-}
-
 .download-button {
-    margin: 5% 3% 5% 0%
+    margin: 5% 3% 5% 0%;
 }
 
 .navbar {
-    padding: 0 0 6rem;
+    padding: 0 0 8rem;
 }
 
 .navbar-brand {
@@ -25,35 +40,51 @@ body {
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 200;
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 25px;
 }
 
 .title-image {
+    top: -20%;
+    position: absolute;
+    right: 22.5%;
     width: 60%;
     transform: rotate(25deg);
+}
+
+@media (max-width: 1200px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+.title-row {
+    position: relative;
+    padding: 1px;
 }
 
 #h1-home-title {
     font-size: 3.5rem;
     line-height: 1.5;
-    font-weight: 900;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
 }
 
 /*****  Features Section   *****/
 
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -67,7 +98,6 @@ body {
 }
 
 .h3-home-features {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -76,7 +106,7 @@ body {
 }
 
 #features {
-    padding: 7% 15%;
+    position: relative;
 }
 
 /*****  Testimonials Section   *****/
@@ -84,12 +114,8 @@ body {
 .carousel-indicators {
     padding: 0 0 50px;
 }
-.carousel-item {
-    padding: 7% 15%;
-}
 
 .h2-home-testimonials {
-    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 700;
@@ -103,9 +129,7 @@ body {
 }
 
 #testimonials {    
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
 }
 
 /*****  Press Section   *****/
@@ -117,14 +141,12 @@ body {
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
 /*****  Pricing Section    *****/
 
 .button-hover:hover {
-    color: #fff;
     background-color: #ff4c68;
 }
 
@@ -150,7 +172,6 @@ body {
 
 .h2-home-price-card {
     color:#ff4c68;
-    font-weight: 900;
     margin: 1.5rem auto 3rem;
 }
 
@@ -172,19 +193,17 @@ body {
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 /*****  Call To Action Section  *****/
 
-#cta {
-    background-color: #ff4c68;
-    text-align: center;
+.h3-home-cta {
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
 /*****  Footer Section *****/
 
-#footer {
-    background-color: #ff4c68;
-    text-align: center;
+.contact-icon {
+    margin: 2% 1%;
 }
